@@ -1,0 +1,89 @@
+.services {
+    /* padding: 0 3rem 0 3rem; */
+    display: flex;
+    /* height: 30rem; */
+    margin-top: 7rem;
+    /* scroll view */
+    padding-top: 3rem;
+  }
+  /* left side */
+  .awesome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* gap: 20px; */
+    text-align: left;
+  }
+  
+  .awesome > :nth-child(1) {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .awesome > :nth-child(2) {
+    color: orange;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .awesome > :nth-child(3) {
+    color: gray;
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+  .awesome a{
+    /* background: red; */
+    color: #0d6efd;
+    text-decoration: underline;
+    width: 8rem;
+    margin-top: 4rem;
+    height: 2rem;
+  }
+  .s-button {
+    width: 8rem;
+    height: 2rem;
+    /* margin-top: 4rem; */
+  }
+  /* right sided */
+.cards {
+    position: relative;
+    /* background-color: black; */
+    display: flex;
+    /* width:55vw; */
+  }
+  .cards > * {
+    position: absolute;
+  }
+  .cards >:nth-child(1){
+top: -3rem;
+left: 23rem;
+  }
+  .cards >:nth-child(2){
+    top: 12rem;
+    left: -2rem;
+      }
+
+      /* For the Responsivve quare */
+      @media screen and (max-width: 1024px) {
+        .cards >:nth-child(1){
+          top: -3rem;
+          left: 15rem;
+            }
+            .cards >:nth-child(2){
+              top: 12rem;
+              left: -3rem;
+                }
+      }
+      @media screen and (max-width: 768px) {
+        .services {
+          display: block;
+          height: 100%;
+        }
+        .cards >:nth-child(1){
+          top: -3rem;
+          left: 25rem;
+            }
+            .cards >:nth-child(2){
+              top: 3rem;
+              left: 3rem;
+                }
+      }
