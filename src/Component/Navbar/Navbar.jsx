@@ -5,6 +5,7 @@ import Scroll from 'react-scroll';
 import { Link } from "react-scroll";
 import {Routes, Route} from "react-router-dom";
 import Toggle from "../Toggle/Toggle";
+import  Contacts from '../Contact/Contacts'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {getAuth, createUserWithEmailAndPassword ,signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider,FacebookAuthProvider ,GithubAuthProvider ,sendEmailVerification ,RecaptchaVerifier  } from "firebase/auth";
@@ -199,7 +200,7 @@ const github=()=>{
   
     <nav className="navbar navbar-expand-lg  navbar-dark bg-dark  position-sticky">
         <div className="container position-sticky">
-            <a className="navbar-brand" href="#">CheatSheet</a>
+            <a className="navbar-brand" href="#">portfolio</a>
            
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -242,7 +243,8 @@ const github=()=>{
                 </ul>
                 
                 <div className="text-end d-flex mt-md-2 mt-3">
-                <button type="button" className="btn btn-outline-light me-2 ">Contact us</button>
+                {/* <p  className="btn btn-outline-light me-2 "> <Contacts/></p> */}
+                <Contacts/>
                     <button type="button" className="btn btn-outline-light me-2 " data-bs-toggle="modal"
                         data-bs-target="#loginModal">Login</button>
                     <button type="button" className="btn btn-warning" data-bs-toggle="modal"

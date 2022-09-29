@@ -37,9 +37,9 @@ function Silder() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide><img src={Project1} alt="project" /></SwiperSlide>
-        <SwiperSlide><img src={Project2} alt="project" /></SwiperSlide>
-        <SwiperSlide><img src={Project3} alt="project" /></SwiperSlide>
+        <SwiperSlide><h5>Bootstrap desgin</h5><img src={Project1} alt="project" /></SwiperSlide>
+        <SwiperSlide><h5>Email template desgin</h5><img src={Project2} alt="project" /></SwiperSlide>
+        <SwiperSlide><h5>Email template desgin</h5><img src={Project3} alt="project" /></SwiperSlide>
         <SwiperSlide><img src={Project2} alt="project" /></SwiperSlide>
         <SwiperSlide><img src={Project1} alt="project" /></SwiperSlide>
         <SwiperSlide><img src={Project3} alt="project" /></SwiperSlide>

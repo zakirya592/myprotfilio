@@ -69,10 +69,7 @@ function Footer() {
         <div className="row d-flex justify-content-center">
           <div className="col-lg-8">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              distinctio earum repellat quaerat voluptatibus placeat nam,
-              commodi optio pariatur est quia magnam eum harum corrupti
-              dicta, aliquam sequi voluptate quas.
+            I am an Frontend web Developer with high level of experience in web designing and development, producting the Quality work by using react.js
             </p>
           </div>
         </div>
@@ -95,17 +92,17 @@ function Footer() {
         ><AiFillGoogleCircle/></a>
 
       {/* <!-- Instagram --> */}
-      <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a className="btn btn-outline-light btn-floating m-1" target='_blank' href="https://github.com/zakirya592/" role="button"
         ><BsInstagram/>
       </a>
 
       {/* <!-- Linkedin --> */}
-      <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a className="btn btn-outline-light btn-floating m-1" target='_blank' href="https://www.linkedin.com/in/muhammad-zakirya-7b6352246" role="button"
         ><AiFillLinkedin/>
       </a>
 
       {/* <!-- Github --> */}
-      <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a className="btn btn-outline-light btn-floating m-1" target='_blank' href="https://github.com/zakirya592/" role="button"
         ><AiFillGithub/>
       </a>
      </section>

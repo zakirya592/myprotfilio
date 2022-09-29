@@ -1,7 +1,7 @@
 import React,{ useContext } from 'react';
 import { themeContext } from "../../Context";
 import './Service.css';
-import cv from '../../Images/CV.pdf'
+import cv from '../../Images/M Zakirya CV.pdf'
 import HeartEmoji from '../../Images/Heart.jpg'
 import Card from '../../Component/Card/Card';
 import {motion} from 'framer-motion';
@@ -19,9 +19,9 @@ function Service() {
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
         <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
+          I am develop and design the website By using the HTML, CSS, javascript,Bootstrap React js,and wordpress
           <br />
-          ispum is simpley dummy text of printing
+          And also the provid the email template
         </spane>
         <a href={cv} download>
           <button className="button s-button">Download CV</button>
@@ -41,7 +41,7 @@ function Service() {
           < Card
             emoji={HeartEmoji}
             heading={"Design"}
-            detail={"Figma, Sketch, Adobe Photoshop, Adobe Illustrator, "}
+            detail={"HTML, CSS, javascript,Bootstrap React js,and wordpress,Figma "}
           />
           </motion.div>
            {/* 2nd card */}

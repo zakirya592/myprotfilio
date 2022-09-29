@@ -27,15 +27,14 @@ const Intro = () => {
             Thank you
           </span>
         </div>
-        <Link to="contact" smooth={true} spy={true}>
+        <Link to="contact" download smooth={true} spy={true}>
           <button className="button i-button">Hire me</button>
         </Link>
         {/* social icons */}
         <div className="i-icons">
-        <a href="https://imgbb.com/"><img src="https://i.ibb.co/P16FMZn/9919.png" alt="gethub" border="0" width="50px"/></a>
-          <img  src="https://i.ibb.co/k5r4Tr9/363-3632986-logo-linkedin-png-rond-transparent-png.png"
-         alt="lind" width="50px" />
-         <a href="https://ibb.co/93CyBp0"><img src="https://i.ibb.co/G3bCGdD/Instagram-logo-2016-svg.webp"
+        <a href="https://github.com/zakirya592/" target='_blank'><img src="https://i.ibb.co/P16FMZn/9919.png" alt="gethub" border="0" width="50px"/></a>
+        <a href="https://www.linkedin.com/in/muhammad-zakirya-7b6352246"target='_blank'><img src="https://i.ibb.co/k5r4Tr9/363-3632986-logo-linkedin-png-rond-transparent-png.png" alt="Linkden" border="0" width="50px"/></a>
+         <a href="https://www.instagram.com/zakirya.m/" target="_blank"><img src="https://i.ibb.co/G3bCGdD/Instagram-logo-2016-svg.webp"
         width="50px" alt="Instagram"/></a>
 
         </div>

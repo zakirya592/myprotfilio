@@ -3,8 +3,25 @@ import './Contacts.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { themeContext } from "../../Context";
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+
 
 function Contacts() {
+    const [open, setOpen] = React.useState(false);
+
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
+  
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
 
@@ -48,7 +65,7 @@ function Contacts() {
                     message:''
                 });
                 toast.success('You hava successful submited the from', {
-                    position: "bottom-center",
+                    position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
                     closeOnClick: true,
@@ -59,7 +76,7 @@ function Contacts() {
             }
             else{
                 toast.error('You will not submited the from ', {
-                    position: "bottom-center",
+                    position: "top-center",
                     autoClose: 5000,
                     hideProgressBar: false,
                     closeOnClick: true,
@@ -71,7 +88,7 @@ function Contacts() {
       }
       else{
         toast.error('You will not submited the from ', {
-            position: "bottom-center",
+            position: "top-center",
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -84,10 +101,19 @@ function Contacts() {
     }
   return (
     <>
-    <div className="main-block" style={{backgroundColor: darkMode?'black':'#9b5b18'}}>
-<div className="left-part">
+      <Button type="button" className='btn btn-outline-light text-white me-2 ' onClick={handleClickOpen}>
+       Contact US
+      </Button>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+         <div className="main-block w-100"  style={{backgroundColor: darkMode?'black':'#9b5b18'}}>
+{/* <div className="left-part">
 <h1 style={{ color: darkMode ? "orange" : "white" }} >Contact us</h1>
-</div>
+</div> */}
 <form method='post' className='contactfromed' style={{ backgroundColor: darkMode ? "#504c4c" : "white" }} >
 <h1>Contact Us</h1>
 <div className="info" >
@@ -100,6 +126,12 @@ function Contacts() {
 </form>
 <ToastContainer />
 </div>
+
+      </Dialog>
+
+
+
+   
 
     </>
   )

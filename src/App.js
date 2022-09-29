@@ -35,7 +35,6 @@ function App() {
     <Silder/>
     <Testimonial/>
     <Contact/>
-    <Contacts/>
     <Footer/>
     </div>
     </>

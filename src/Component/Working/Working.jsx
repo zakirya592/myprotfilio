@@ -49,16 +49,25 @@ function Working() {
             <div className='w-mainCircle'>
             <div
             className="w-secCircle">
-            <img src={Upwork} alt="" />
+              <a href=''>
+            <img src={Upwork} alt="upwork" width='45px' />
+            </a>
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <a href=''>
+              <img src={Fiverr} alt="fiverr" width='45px' />
+              </a>
+            
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+          <a href=''>
+            <img src={Amazon} alt="Amazon" width='45px' />
+            </a>
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+          <a href=''>
+            <img src={Facebook} alt="Facebook" width='45px' />
+            </a>
           </div>
             </div>
                {/* background Circles */}
